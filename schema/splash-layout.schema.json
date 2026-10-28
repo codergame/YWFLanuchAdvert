@@ -1,0 +1,202 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ywf.local/splash-layout.schema.json",
+  "title": "YWFLanuchAdvert splash layout",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "designWidth", "duration", "skip", "root"],
+  "properties": {
+    "schema": { "const": 1 },
+    "designWidth": { "type": "number", "minimum": 1 },
+    "designHeight": { "type": "number", "minimum": 1 },
+    "duration": { "type": "integer" },
+    "skip": { "$ref": "#/definitions/skip" },
+    "root": { "$ref": "#/definitions/container" }
+  },
+  "definitions": {
+    "color": {
+      "type": "string",
+      "pattern": "^#([0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$"
+    },
+    "insets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "top": { "type": "number" },
+        "left": { "type": "number" },
+        "bottom": { "type": "number" },
+        "right": { "type": "number" }
+      }
+    },
+    "size": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["widthMode", "heightMode"],
+      "properties": {
+        "widthMode": { "enum": ["fixed", "wrap", "match", "percent", "fullscreen"] },
+        "heightMode": { "enum": ["fixed", "wrap", "match", "percent", "fullscreen"] },
+        "width": { "type": "number" },
+        "height": { "type": "number" }
+      }
+    },
+    "htmlSize": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["widthMode", "heightMode"],
+      "properties": {
+        "widthMode": { "enum": ["fixed", "match", "percent", "fullscreen"] },
+        "heightMode": { "enum": ["fixed", "match", "percent", "fullscreen"] },
+        "width": { "type": "number" },
+        "height": { "type": "number" }
+      }
+    },
+    "click": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": { "enum": ["openUrl", "dismiss"] },
+        "url": { "type": "string" }
+      }
+    },
+    "skip": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "text", "position", "offsetX", "offsetY", "textColor", "backgroundColor", "fontSize", "cornerRadius"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "visible": { "type": "boolean" },
+        "text": { "type": "string" },
+        "position": { "enum": ["topLeft", "topRight", "bottomLeft", "bottomRight"] },
+        "offsetX": { "type": "number" },
+        "offsetY": { "type": "number" },
+        "textColor": { "$ref": "#/definitions/color" },
+        "backgroundColor": { "$ref": "#/definitions/color" },
+        "fontSize": { "type": "number", "minimum": 1 },
+        "cornerRadius": { "type": "number", "minimum": 0 },
+        "paddingH": { "type": "number", "minimum": 0 },
+        "paddingV": { "type": "number", "minimum": 0 }
+      }
+    },
+    "container": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "layout", "size", "children"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "const": "container" },
+        "layout": { "enum": ["absolute", "linear", "dock"] },
+        "direction": { "enum": ["horizontal", "vertical"] },
+        "spacing": { "type": "number", "minimum": 0 },
+        "gravity": { "enum": ["start", "center", "end", "spaceBetween"] },
+        "size": { "$ref": "#/definitions/size" },
+        "children": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/node" }
+        },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "dock": { "enum": ["top", "bottom", "left", "right", "fill"] },
+        "weight": { "type": "number", "minimum": 0 },
+        "align": { "enum": ["start", "center", "end", "stretch"] },
+        "margin": { "$ref": "#/definitions/insets" },
+        "padding": { "$ref": "#/definitions/insets" },
+        "backgroundColor": { "$ref": "#/definitions/color" },
+        "click": { "$ref": "#/definitions/click" }
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "size", "src", "contentMode"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "const": "image" },
+        "size": { "$ref": "#/definitions/size" },
+        "src": { "type": "string", "pattern": "^(zip|bundle)://.+" },
+        "contentMode": { "enum": ["fill", "fit", "aspectFill"] },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "dock": { "enum": ["top", "bottom", "left", "right", "fill"] },
+        "weight": { "type": "number", "minimum": 0 },
+        "align": { "enum": ["start", "center", "end", "stretch"] },
+        "margin": { "$ref": "#/definitions/insets" },
+        "padding": { "$ref": "#/definitions/insets" },
+        "backgroundColor": { "$ref": "#/definitions/color" },
+        "click": { "$ref": "#/definitions/click" }
+      }
+    },
+    "button": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "size", "text", "textColor", "fontSize", "backgroundColor", "cornerRadius"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "const": "button" },
+        "size": { "$ref": "#/definitions/size" },
+        "text": { "type": "string" },
+        "textColor": { "$ref": "#/definitions/color" },
+        "fontSize": { "type": "number", "minimum": 1 },
+        "backgroundColor": { "$ref": "#/definitions/color" },
+        "cornerRadius": { "type": "number", "minimum": 0 },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "dock": { "enum": ["top", "bottom", "left", "right", "fill"] },
+        "weight": { "type": "number", "minimum": 0 },
+        "align": { "enum": ["start", "center", "end", "stretch"] },
+        "margin": { "$ref": "#/definitions/insets" },
+        "padding": { "$ref": "#/definitions/insets" },
+        "click": { "$ref": "#/definitions/click" }
+      }
+    },
+    "html": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "size", "source"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "const": "html" },
+        "size": { "$ref": "#/definitions/htmlSize" },
+        "source": {
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["type", "html"],
+              "properties": {
+                "type": { "const": "inline" },
+                "html": { "type": "string" }
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["type", "path"],
+              "properties": {
+                "type": { "const": "zip" },
+                "path": { "type": "string", "minLength": 1 }
+              }
+            }
+          ]
+        },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "dock": { "enum": ["top", "bottom", "left", "right", "fill"] },
+        "weight": { "type": "number", "minimum": 0 },
+        "align": { "enum": ["start", "center", "end", "stretch"] },
+        "margin": { "$ref": "#/definitions/insets" },
+        "padding": { "$ref": "#/definitions/insets" },
+        "backgroundColor": { "$ref": "#/definitions/color" },
+        "click": { "$ref": "#/definitions/click" }
+      }
+    },
+    "node": {
+      "oneOf": [
+        { "$ref": "#/definitions/container" },
+        { "$ref": "#/definitions/image" },
+        { "$ref": "#/definitions/button" },
+        { "$ref": "#/definitions/html" }
+      ]
+    }
+  }
+}

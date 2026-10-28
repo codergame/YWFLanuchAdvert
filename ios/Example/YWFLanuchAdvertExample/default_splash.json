@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "designWidth": 375,
+  "designHeight": 812,
+  "duration": -1,
+  "skip": {
+    "enabled": true,
+    "visible": false,
+    "text": "跳过",
+    "position": "topRight",
+    "offsetX": 16,
+    "offsetY": 12,
+    "textColor": "#FFFFFF",
+    "backgroundColor": "#80000000",
+    "fontSize": 13,
+    "cornerRadius": 14,
+    "paddingH": 12,
+    "paddingV": 6
+  },
+  "root": {
+    "id": "root",
+    "type": "container",
+    "layout": "dock",
+    "size": { "widthMode": "fullscreen", "heightMode": "fullscreen" },
+    "backgroundColor": "#1C1917",
+    "children": [
+      {
+        "id": "photo",
+        "type": "image",
+        "src": "bundle://splash.png",
+        "contentMode": "aspectFill",
+        "dock": "fill",
+        "size": { "widthMode": "match", "heightMode": "match" }
+      },
+      {
+        "id": "caption",
+        "type": "container",
+        "layout": "absolute",
+        "dock": "top",
+        "size": { "widthMode": "match", "heightMode": "fixed", "height": 140 },
+        "children": [
+          {
+            "id": "html",
+            "type": "html",
+            "x": 20,
+            "y": 64,
+            "size": { "widthMode": "fixed", "heightMode": "fixed", "width": 240, "height": 56 },
+            "source": {
+              "type": "inline",
+              "html": "<div style=\"font-family:-apple-system,sans-serif;color:#fff;font-size:22px;font-weight:700;\">本地默认启屏</div><div style=\"color:#fdba74;font-size:13px;margin-top:4px;\">资源未下完时展示这份 JSON</div>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "actions",
+        "type": "container",
+        "layout": "linear",
+        "direction": "vertical",
+        "spacing": 8,
+        "gravity": "center",
+        "dock": "bottom",
+        "size": { "widthMode": "match", "heightMode": "fixed", "height": 120 },
+        "padding": { "top": 12, "left": 24, "bottom": 24, "right": 24 },
+        "children": [
+          {
+            "id": "enter",
+            "type": "button",
+            "text": "进入示例",
+            "textColor": "#FFFFFF",
+            "fontSize": 16,
+            "backgroundColor": "#C2410C",
+            "cornerRadius": 8,
+            "size": { "widthMode": "match", "heightMode": "fixed", "height": 44 },
+            "click": { "type": "dismiss" }
+          }
+        ]
+      }
+    ]
+  }
+}

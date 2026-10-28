@@ -1,0 +1,40 @@
+{
+  "serverTime": "2026-10-28T00:00:00Z",
+  "ads": [
+    {
+      "id": "1",
+      "priority": 10,
+      "updatedAt": "2026-10-28T00:00:00Z",
+      "startTime": "2026-10-01T00:00:00Z",
+      "endTime": "2026-12-31T23:59:59Z",
+      "packageUrl": "https://cdn.example.com/splash/1.zip",
+      "packageMd5": "00000000000000000000000000000000",
+      "layout": {
+        "schema": 1,
+        "designWidth": 375,
+        "designHeight": 812,
+        "duration": 5,
+        "skip": {
+          "enabled": true,
+          "visible": true,
+          "text": "跳过",
+          "position": "topRight",
+          "offsetX": 16,
+          "offsetY": 12,
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#80000000",
+          "fontSize": 13,
+          "cornerRadius": 14
+        },
+        "root": {
+          "id": "root",
+          "type": "container",
+          "layout": "absolute",
+          "size": { "widthMode": "fullscreen", "heightMode": "fullscreen" },
+          "backgroundColor": "#141414",
+          "children": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.DS_Store
+xcuserdata/
+*.xcuserstate
+server/target/
+server/admin-ui/node_modules/
+server/data/
+ios/Example/Pods/
+ios/Example/Podfile.lock
+ios/Example/YWFLanuchAdvertExample.xcworkspace/
+ios/Example/build/
+*.zip.tmp

@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E6535D49769175BFF495797 /* ObjCEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2DA87825B80AAE19453F54 /* ObjCEntry.m */; };
+		551291F8D84ADE8DA9482132 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4331BA1AA66EFF362833185 /* Foundation.framework */; };
+		5824A82FBB3FB1BBA4DAA685 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = B1902BE3E45C88588FBE80CE /* splash.png */; };
+		67546C3FA121D06463A9CD02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96689053EB342817FD5DFD43 /* ViewController.swift */; };
+		966CA65F19AA1FEABAAE76F9 /* default_splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B997BFA0836FBA11F739474 /* default_splash.json */; };
+		B4DF021641A5859123BC6C2C /* Pods_YWFLanuchAdvertExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72534EE1696CA4666F3503F /* Pods_YWFLanuchAdvertExample.framework */; };
+		C7E59D9D1D856EDBED259E8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6091A9680611792F319D28C2 /* AppDelegate.swift */; };
+		EC59A221CC063E0B6DDA5D05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F62EAC0EEED1230F8CE8E /* SceneDelegate.swift */; };
+		FD2EB1F1028F852FCD007C83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BD71D3F1F0D1C9951098C7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C2DA87825B80AAE19453F54 /* ObjCEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ObjCEntry.m; sourceTree = "<group>"; };
+		1B997BFA0836FBA11F739474 /* default_splash.json */ = {isa = PBXFileReference; includeInIndex = 1; path = default_splash.json; sourceTree = "<group>"; };
+		6091A9680611792F319D28C2 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88A9FEB48746ED4C96683E91 /* YWFLanuchAdvertExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YWFLanuchAdvertExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96689053EB342817FD5DFD43 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A29F2D141C42B279A2FBB977 /* YWFLanuchAdvertExample-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YWFLanuchAdvertExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		A72534EE1696CA4666F3503F /* Pods_YWFLanuchAdvertExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YWFLanuchAdvertExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1902BE3E45C88588FBE80CE /* splash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		B3DA7FD33AD0746336589B43 /* Pods-YWFLanuchAdvertExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWFLanuchAdvertExample.release.xcconfig"; path = "Target Support Files/Pods-YWFLanuchAdvertExample/Pods-YWFLanuchAdvertExample.release.xcconfig"; sourceTree = "<group>"; };
+		B4331BA1AA66EFF362833185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C63F62EAC0EEED1230F8CE8E /* SceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C92732833CD15291CACB660E /* ObjCEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ObjCEntry.h; sourceTree = "<group>"; };
+		DF2869D617B3BD924B69F560 /* Pods-YWFLanuchAdvertExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWFLanuchAdvertExample.debug.xcconfig"; path = "Target Support Files/Pods-YWFLanuchAdvertExample/Pods-YWFLanuchAdvertExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E9BD71D3F1F0D1C9951098C7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8F404198C7D4A468E9FA9C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551291F8D84ADE8DA9482132 /* Foundation.framework in Frameworks */,
+				B4DF021641A5859123BC6C2C /* Pods_YWFLanuchAdvertExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		024D3DD25D38850800548937 /* YWFLanuchAdvertExample */ = {
+			isa = PBXGroup;
+			children = (
+				6091A9680611792F319D28C2 /* AppDelegate.swift */,
+				C63F62EAC0EEED1230F8CE8E /* SceneDelegate.swift */,
+				96689053EB342817FD5DFD43 /* ViewController.swift */,
+				0C2DA87825B80AAE19453F54 /* ObjCEntry.m */,
+				C92732833CD15291CACB660E /* ObjCEntry.h */,
+				A29F2D141C42B279A2FBB977 /* YWFLanuchAdvertExample-Bridging-Header.h */,
+				1B997BFA0836FBA11F739474 /* default_splash.json */,
+				B1902BE3E45C88588FBE80CE /* splash.png */,
+				E9BD71D3F1F0D1C9951098C7 /* LaunchScreen.storyboard */,
+			);
+			name = YWFLanuchAdvertExample;
+			path = YWFLanuchAdvertExample;
+			sourceTree = "<group>";
+		};
+		5A72C876100347E35B6E6D63 = {
+			isa = PBXGroup;
+			children = (
+				D53A0C757D72069E80C81CFB /* Products */,
+				E644534CE8010F2AA25123C3 /* Frameworks */,
+				024D3DD25D38850800548937 /* YWFLanuchAdvertExample */,
+				83A28FDE2F2A721490C0161F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		83A28FDE2F2A721490C0161F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3DA7FD33AD0746336589B43 /* Pods-YWFLanuchAdvertExample.release.xcconfig */,
+				DF2869D617B3BD924B69F560 /* Pods-YWFLanuchAdvertExample.debug.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D53A0C757D72069E80C81CFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88A9FEB48746ED4C96683E91 /* YWFLanuchAdvertExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E644534CE8010F2AA25123C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6F0CEB9138F2D8CF26048EA /* iOS */,
+				A72534EE1696CA4666F3503F /* Pods_YWFLanuchAdvertExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6F0CEB9138F2D8CF26048EA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B4331BA1AA66EFF362833185 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45FC005BE4CB2763EECF8F7A /* YWFLanuchAdvertExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E785A5F89C9C6E14205B151E /* Build configuration list for PBXNativeTarget "YWFLanuchAdvertExample" */;
+			buildPhases = (
+				8C6C5E80395058ED2BCDE677 /* [CP] Check Pods Manifest.lock */,
+				C5DC17FAD6C18561AD10BA53 /* Sources */,
+				F8F404198C7D4A468E9FA9C8 /* Frameworks */,
+				C24CB358B367C07EA9AC98C7 /* Resources */,
+				73A04DA93B6CDA450F7C1246 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YWFLanuchAdvertExample;
+			productName = YWFLanuchAdvertExample;
+			productReference = 88A9FEB48746ED4C96683E91 /* YWFLanuchAdvertExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F393673E576CA87C9250019 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 58E3D100A9BE6D84451D0FD2 /* Build configuration list for PBXProject "YWFLanuchAdvertExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A72C876100347E35B6E6D63;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 100;
+			productRefGroup = D53A0C757D72069E80C81CFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45FC005BE4CB2763EECF8F7A /* YWFLanuchAdvertExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C24CB358B367C07EA9AC98C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966CA65F19AA1FEABAAE76F9 /* default_splash.json in Resources */,
+				5824A82FBB3FB1BBA4DAA685 /* splash.png in Resources */,
+				FD2EB1F1028F852FCD007C83 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73A04DA93B6CDA450F7C1246 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YWFLanuchAdvertExample/Pods-YWFLanuchAdvertExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YWFLanuchAdvert/YWFLanuchAdvert.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YWFLanuchAdvert.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YWFLanuchAdvertExample/Pods-YWFLanuchAdvertExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C6C5E80395058ED2BCDE677 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YWFLanuchAdvertExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5DC17FAD6C18561AD10BA53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E59D9D1D856EDBED259E8E /* AppDelegate.swift in Sources */,
+				EC59A221CC063E0B6DDA5D05 /* SceneDelegate.swift in Sources */,
+				67546C3FA121D06463A9CD02 /* ViewController.swift in Sources */,
+				1E6535D49769175BFF495797 /* ObjCEntry.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7EF07137089F4B499EB03367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DA7FD33AD0746336589B43 /* Pods-YWFLanuchAdvertExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = YWFLanuchAdvertExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ywf.YWFLanuchAdvertExample;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "YWFLanuchAdvertExample/YWFLanuchAdvertExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDB4C6BAEFB0CA4BB41A1F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E79D4188CDC436036FF132BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E8835EAC950DA49F376EB4D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF2869D617B3BD924B69F560 /* Pods-YWFLanuchAdvertExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = YWFLanuchAdvertExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ywf.YWFLanuchAdvertExample;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "YWFLanuchAdvertExample/YWFLanuchAdvertExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58E3D100A9BE6D84451D0FD2 /* Build configuration list for PBXProject "YWFLanuchAdvertExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79D4188CDC436036FF132BE /* Debug */,
+				CDB4C6BAEFB0CA4BB41A1F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E785A5F89C9C6E14205B151E /* Build configuration list for PBXNativeTarget "YWFLanuchAdvertExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF07137089F4B499EB03367 /* Release */,
+				E8835EAC950DA49F376EB4D8 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F393673E576CA87C9250019 /* Project object */;
+}

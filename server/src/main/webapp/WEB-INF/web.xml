@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+  <display-name>YWFLanuchAdvert</display-name>
+  <listener>
+    <listener-class>com.ywf.lanuchadvert.AppListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>public-api</servlet-name>
+    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>jakarta.ws.rs.Application</param-name>
+      <param-value>com.ywf.lanuchadvert.PublicApplication</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>public-api</servlet-name>
+    <url-pattern>/api/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>admin-api</servlet-name>
+    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>jakarta.ws.rs.Application</param-name>
+      <param-value>com.ywf.lanuchadvert.AdminApplication</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>admin-api</servlet-name>
+    <url-pattern>/admin/api/*</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>120</session-timeout>
+    <cookie-config>
+      <http-only>true</http-only>
+    </cookie-config>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "designWidth": 375,
+  "designHeight": 812,
+  "duration": 5,
+  "skip": {
+    "enabled": true,
+    "visible": true,
+    "text": "跳过",
+    "position": "topRight",
+    "offsetX": 16,
+    "offsetY": 12,
+    "textColor": "#FFFFFF",
+    "backgroundColor": "#80000000",
+    "fontSize": 13,
+    "cornerRadius": 14,
+    "paddingH": 12,
+    "paddingV": 6
+  },
+  "root": {
+    "id": "root",
+    "type": "container",
+    "layout": "dock",
+    "size": { "widthMode": "fullscreen", "heightMode": "fullscreen" },
+    "backgroundColor": "#141414",
+    "children": [
+      {
+        "id": "hero",
+        "type": "image",
+        "src": "zip://images/hero.png",
+        "contentMode": "aspectFill",
+        "dock": "fill",
+        "size": { "widthMode": "match", "heightMode": "match" },
+        "click": { "type": "openUrl", "url": "https://example.com/landing" }
+      },
+      {
+        "id": "topBar",
+        "type": "container",
+        "layout": "absolute",
+        "dock": "top",
+        "size": { "widthMode": "match", "heightMode": "fixed", "height": 120 },
+        "backgroundColor": "#66000000",
+        "children": [
+          {
+            "id": "badge",
+            "type": "html",
+            "x": 16,
+            "y": 56,
+            "size": { "widthMode": "fixed", "heightMode": "fixed", "width": 220, "height": 48 },
+            "source": {
+              "type": "inline",
+              "html": "<div style=\"font-family:-apple-system,sans-serif;color:#fff;font-size:18px;font-weight:600;\">新品启屏</div><div style=\"color:#ffd6c4;font-size:12px;\">HTML 可以写在 JSON 里</div>"
+            }
+          }
+        ]
+      },
+      {
+        "id": "bottomBar",
+        "type": "container",
+        "layout": "linear",
+        "direction": "vertical",
+        "spacing": 10,
+        "gravity": "center",
+        "dock": "bottom",
+        "size": { "widthMode": "match", "heightMode": "fixed", "height": 168 },
+        "padding": { "top": 16, "left": 24, "bottom": 28, "right": 24 },
+        "backgroundColor": "#F0141414",
+        "children": [
+          {
+            "id": "cta",
+            "type": "button",
+            "text": "立即查看",
+            "textColor": "#FFFFFF",
+            "fontSize": 16,
+            "backgroundColor": "#C2410C",
+            "cornerRadius": 8,
+            "size": { "widthMode": "match", "heightMode": "fixed", "height": 44 },
+            "click": { "type": "openUrl", "url": "https://example.com/landing" }
+          },
+          {
+            "id": "later",
+            "type": "button",
+            "text": "稍后再说",
+            "textColor": "#E7E5E4",
+            "fontSize": 14,
+            "backgroundColor": "#00000000",
+            "cornerRadius": 8,
+            "size": { "widthMode": "match", "heightMode": "fixed", "height": 36 },
+            "click": { "type": "dismiss" }
+          }
+        ]
+      }
+    ]
+  }
+}
